@@ -1,0 +1,50 @@
+{
+  "url": "http://localhost:2368/",
+  "server": {
+    "port": 2368,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "/Users/aidanwood/Desktop/Ghost/content/data/ghost-local.db"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "local",
+  "paths": {
+    "contentPath": "/Users/aidanwood/Desktop/Ghost/content"
+  },
+  "storage": {
+    "active": "ghost-cloudflare-r2",
+    "ghost-cloudflare-r2": {
+      "module": "content/adapters/storage/ghost-cloudflare-r2",
+      "endpoint": "https://b42c844bb9be0332eb5a3033f52386d9.r2.cloudflarestorage.com",
+      "accessKeyId": "baf9a722619d95ec972eed5bce09e2cc",
+      "secretAccessKey": "d414911c571d7276842e6e36fbcf74a700fa8bc519806a04707c775d4cc76d61",
+      "publicDomain": "https://ghost-images.cloudsafaris.com",
+      "GHOST_STORAGE_ADAPTER_R2_GHOST_RESIZE": false,
+      "storage__active": "ghost-cloudflare-r2",
+      "storage__media__adapter": "ghost-cloudflare-r2",
+      "storage__media__storage_type_media": true,
+      "storage__files__adapter": "ghost-cloudflare-r2",
+      "storage__files__storage_type_files": true, 
+      "imageOptimization__resize": false, 
+      "GHOST_STORAGE_ADAPTER_R2_DOMAIN": "https://static.cloudsafaris.com",
+      "GHOST_STORAGE_ADAPTER_R2_BUCKET":"cloudsafari-prod", 
+      "GHOST_STORAGE_ADAPTER_R2_ENDPOINT": "https://b42c844bb9be0332eb5a3033f52386d9.r2.cloudflarestorage.com",
+      "GHOST_STORAGE_ADAPTER_R2_ACCESS_KEY_ID": "baf9a722619d95ec972eed5bce09e2cc",
+      "GHOST_STORAGE_ADAPTER_R2_SECRET_ACCESS_KEY": "d414911c571d7276842e6e36fbcf74a700fa8bc519806a04707c775d4cc76d61", 
+      "GHOST_STORAGE_ADAPTER_R2_IMAGES_URL_PREFIX": "/photos/public/content/images/"
+    }
+  },
+  "imageOptimization": false
+}
